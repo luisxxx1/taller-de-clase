@@ -1,0 +1,105 @@
+/* Estilos generales del sitio */
+body {
+    background-color: #121212; /* Fondo oscuro */
+    font-family: 'Courier New', Courier, monospace; /* Tipografía retro */
+    color: red; /* Texto verde */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+.site-header {
+    background-color: black; /* Fondo gris oscuro */
+    text-align: center; /* Centrar texto */
+    padding: 20px; /* Espaciado interno */
+    border-bottom: 2px solid white; /* Línea inferior azul */
+}
+
+.site-header__title {
+    margin: 0;
+    color: #ffffff; /* Título en blanco */
+}
+
+.site-header__subtitle {
+    color: white; /* Subtítulo en celeste */
+}
+
+/* Navegación */
+.site-nav {
+    background-color: #222; /* Fondo más oscuro */
+    padding: 10px;
+}
+
+.site-nav__list {
+    list-style: none; /* Quitar viñetas */
+    display: flex; /* Menú horizontal */
+    justify-content: center;
+    gap: 20px; /* Espacio entre enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav__item a {
+    color: white; /* Azul brillante */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-nav__item a:hover {
+    color: white; /* Azul más claro al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+.site-main {
+    display: flex; /* Colocar sección y aside lado a lado */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Aquí aplico modelo de caja */
+.article {
+    border: 2px solid black; /* Borde azul */
+    padding: 15px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo */
+    background-color: #1e1e1e; /* Fondo gris oscuro */
+    position: relative; /* Necesario para posicionar el botón */
+}
+
+.article__image {
+    max-width: 100%; /* Imagen responsiva */
+    border: 1px solid black; /* Borde verde */
+    margin-bottom: 10px;
+}
+
+.article__button {
+    position: absolute; /* Botón en esquina */
+    bottom: 10px;
+    right: 10px;
+    background-color: black; /* Fondo azul */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.article__button:hover {
+    background-color:  white; /* Cambio de color al pasar el mouse */
+}
+
+/* Barra lateral */
+.sidebar {
+    flex: 1;
+    background-color: #2a2a2a; /* Fondo gris intermedio */
+    padding: 10px;
+    margin-left: 20px;
+    color: #e0e0e0; /* Texto gris claro */
+}
+
+/* Pie de página */
+.site-footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
